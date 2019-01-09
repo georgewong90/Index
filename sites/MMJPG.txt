@@ -1,0 +1,138 @@
+{
+                "categories": [
+                    {
+                        "title": "首页",
+                        "url": "http://www.mmjpg.com/home/{page:1}",
+                        "cid": 1
+                    },
+                    {
+                        "title": "热门",
+                        "url": "http://www.cao0003.com/most-popular/{pageStr:{page:1}/}",
+                        "cid": 2
+                    },
+                    {
+                        "title": "最多点击",
+                        "url": "https://www.tube8.com/most-viewed/page/{page:1}/?timeby=all",
+                        "cid": 3
+                    },
+                    {
+                        "title": "最多收藏",
+                        "url": "https://www.tube8.com/most-favorited/page/{page:1}/?timeby=all",
+                        "cid": 4
+                    },
+                    {
+                        "title": "最受好评",
+                        "url": "https://www.tube8.com/top/page/{page:1}/?timeby=all",
+                        "cid": 5
+                    },
+                    {
+                        "title": "最多评论",
+                        "url": "https://www.tube8.com/most-discussed/page/{page:1}/?timeby=all",
+                        "cid": 6
+                    },
+                    {
+                        "title": "最长视频",
+                        "url": "https://www.tube8.com/longest/page/{page:1}/?timeby=all",
+                        "cid": 7
+                    },
+                    {
+                        "title": "分类-amateur",
+                        "url": "https://www.tube8.com/cat/amateur/6/page/{page:1}/",
+                        "cid": 8
+                    },
+                    {
+                        "title": "分类-anal",
+                        "url": "https://www.tube8.com/cat/anal/13/page/{page:1}/",
+                        "cid": 9
+                    },
+                    {
+                        "title": "分类-asian",
+                        "url": "https://www.tube8.com/cat/asian/12/page/{page:1}/",
+                        "cid": 10
+                    }
+                ],
+                "cookie": "",
+                "flag": "noRating|jsNeededGallery",
+                "galleryRule": {
+                    "js": "document.getElementById('viewall').click();",
+                    "pictureRule": {
+                        "item": {
+                            "selector": "#content"
+                        },
+                        "thumbnail": {
+                            "regex": "(http://[^\"]*?\\.jpg)",
+                            "selector": "this"
+                        },
+                        "url": {
+                            "regex": "(http://[^\"]*?\\.jpg)",
+                            "selector": "img"
+                        }
+                    },
+                    "tagRule": {
+                        "item": {
+                            "selector": "div.item>a:gt(0)"
+                        },
+                        "title": {
+                            "fun": "text",
+                            "selector": "this"
+                        },
+                        "url": {
+                            "fun": "attr",
+                            "param": "href",
+                            "regex": "(.+)",
+                            "replacement": "$1{pageStr:{page:1}/}",
+                            "selector": "this"
+                        }
+                    }
+                },
+                "galleryUrl": "{idCode:}",
+                "header": "",
+                "indexRule": {
+                    "category": {
+                        "fun": "text",
+                        "selector": "div.duration"
+                    },
+                    "cover": {
+                        "fun": "attr",
+                        "param": "src",
+                        "selector": "a img"
+                    },
+                    "datetime": {
+                        "fun": "text",
+                        "selector": "span:eq(2)"
+                    },
+                    "idCode": {
+                        "fun": "attr",
+                        "param": "href",
+                        "selector": "a"
+                    },
+                    "item": {
+                        "selector": "div.pic ul li"
+                    },
+                    "rating": {
+                        "fun": "text",
+                        "regex": "(.+)%",
+                        "replacement": "$1/20",
+                        "selector": "div.rating"
+                    },
+                    "title": {
+                        "fun": "text",
+                        "param": "title",
+                        "selector": ".title"
+                    },
+                    "uploader": {
+                        "fun": "text",
+                        "selector": "div.views"
+                    }
+                },
+                "indexUrl": "http://www.mmjpg.com/home/{page:1}",
+                "loginUrl": "http://www.mmjpg.com/",
+                "searchUrl": "https://www.tube8.com/searches.html?q={keyword:}&page={page:1}",
+                "title": "MMJPG",
+                "disableHProxy": false,
+                "gid": 5,
+                "index": 0,
+                "isGrid": false,
+                "sid": 34,
+                "versionCode": 1
+            }

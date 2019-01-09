@@ -1,0 +1,103 @@
+{
+    "title": "chatubate",
+    "indexUrl": "https://chaturbate.global/{pageStr:?page={page:1}}",
+    "loginUrl": "https://chaturbate.global/",
+    "searchurl": "https://chaturbate.global/",
+    "galleryUrl": "https://chaturbate.global{idCode:}",
+    "flag": "preloadGallery|noRating",
+    "categories": [
+        {
+            "title": "首页",
+            "url": "https://chaturbate.global/{pageStr:?page={page:1}}",
+            "cid": 1
+        },
+        {
+            "title": "美女",
+            "url": "https://chaturbate.global/female-cams/{pageStr:?page={page:1}}",
+            "cid": 2
+        },
+        {
+            "title": "基佬",
+            "url": "https://chaturbate.global/male-cams/{pageStr:?page={page:1}}",
+            "cid": 3
+        },
+        {
+            "title": "男女",
+            "url": "https://chaturbate.global/couple-cams/{pageStr:?page={page:1}}",
+            "cid": 4
+        },
+        {
+            "title": "变性人",
+            "url": "https://chaturbate.global/trans-cams/{pageStr:?page={page:1}}",
+            "cid": 4
+        }
+    ],
+    "indexRule": {
+        "item": {
+            "selector": "ul.list>li"
+        },
+        "idCode": {
+            "fun": "attr",
+            "param": "href",
+            "regex": "(.*)",
+            "selector": "a"
+        },
+        "title": {
+            "fun": "text",
+            "param": "alt",
+            "regex": "(.*)",
+            "selector": "div.title>a"
+        },
+        "cover": {
+            "fun": "attr",
+            "param": "src",
+            "regex": "(.*)",
+            "selector": "a>img"
+        },
+        "description": {
+            "fun": "attr",
+            "param": "title",
+            "regex": "(.*)",
+            "selector": "ul.subject>li"
+        },
+        "category": {
+            "fun": "text",
+            "param": "title",
+            "regex": "(.*)",
+            "selector": ".thumbnail_label"
+        },
+        "datetime": {
+            "fun": "text",
+            "param": "title",
+            "regex": "(.*)hrs(.*)viewers",
+            "replacement": "已开播$1个小时$2名观众",
+            "selector": "li.cams"
+        },
+        "uploader": {
+            "fun": "text",
+            "param": "title",
+            "regex": "(.*)",
+            "replacement": "$1岁",
+            "selector": ".age"
+        }
+    },
+    "galleryRule": {
+        "description": {
+            "fun": "html",
+            "param": "alt",
+            "regex": "(.*)",
+            "selector": "s"
+        },
+        "videoRule": {
+            "item": {
+                "selector": "script",
+                "regex": "m3u8"
+            },
+            "content": {
+                "fun": "null",
+                "regex": "jsplayer, '(.*m3u8)",
+                "selector": "this"
+            }
+        }
+    }
+}

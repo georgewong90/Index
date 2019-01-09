@@ -1,0 +1,95 @@
+{
+                "categories": [
+                    {
+                        "title": "最新",
+                        "url": "https://www.porntube69.net/recent/{pageStr:{page:1}/}",
+                        "cid": 1
+                    },
+                    {
+                        "title": "受欢迎",
+                        "url": "https://www.watchmygf.me/popular/{pageStr:{page:1}/}",
+                        "cid": 2
+                    },
+                    {
+                        "title": "评价",
+                        "url": "https://www.watchmygf.me/rated/{pageStr:{page:1}/}",
+                        "cid": 3
+                    },
+                    {
+                        "title": "长度",
+                        "url": "https://www.watchmygf.me/longest/{pageStr:{page:1}/}",
+                        "cid": 4
+                    }
+                ],
+                "cookie": "",
+                "extraRule": {
+                    "pictureRule": {}
+                },
+                "flag": "waterfallAsList|waterfallAsGrid",
+                "galleryRule": {
+                    "pictureRule": {},
+                    "tagRule": {
+                        "item": {
+                            "selector": ".info .item a"
+                        },
+                        "title": {
+                            "fun": "html",
+                            "selector": "this"
+                        },
+                        "url": {
+                            "fun": "attr",
+                            "param": "href",
+                            "regex": "(.*).porn",
+                            "replacement": "$1{pageStr:-{page:1}}.porn",
+                            "selector": "this"
+                        }
+                    },
+                    "videoRule": {
+                        "content": {
+                            "fun": "attr",
+                            "param": "src",
+                            "selector": "this"
+                        },
+                        "item": {
+                            "selector": "video source"
+                        }
+                    }
+                },
+                "galleryUrl": "https://www.porntube69.net{idCode:}",
+                "header": "",
+                "indexRule": {
+                    "category": {
+                        "fun": "html",
+                        "selector": "em"
+                    },
+                    "cover": {
+                        "fun": "attr",
+                        "param": "data-pagespeed-lsc-url",
+                        "regex": "(.*)",
+                        "selector": ".video-thumb img"
+                    },
+                    "idCode": {
+                        "fun": "attr",
+                        "param": "href",
+                        "regex": "(.*)",
+                        "selector": "a"
+                    },
+                    "item": {
+                        "selector": "div.video"
+                    },
+                    "title": {
+                        "fun": "text",
+                        "selector": ".video-title"
+                    }
+                },
+                "indexUrl": "https://www.porntube69.net/recent/{pageStr:{page:1}/}",
+                "loginUrl": "https://www.watchmygf.me/",
+                "searchUrl": "https://www.watchmygf.me/search/{keyword:}/",
+                "title": "porntube69",
+                "disableHProxy": false,
+                "gid": 3,
+                "index": 0,
+                "isGrid": false,
+                "sid": 19,
+                "versionCode": 1
+            }

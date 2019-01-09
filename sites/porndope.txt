@@ -1,0 +1,125 @@
+{
+                "categories": [
+                    {
+                        "title": "最近更新",
+                        "url": "https://porndope.com/",
+                        "cid": 1
+                    },
+                    {
+                        "title": "热门",
+                        "url": "https://porndoe.com/videos?sort=likes-down{pageStr:?page={page:1}}",
+                        "cid": 2
+                    },
+                    {
+                        "title": "最多点击",
+                        "url": "https://porndoe.com/videos?sort=views-down{pageStr:?page={page:1}}",
+                        "cid": 3
+                    }
+                ],
+                "cookie": "",
+                "flag": "preloadGallery|waterfallAsGrid|noRating",
+                "galleryRule": {
+                    "category": {
+                        "fun": "text",
+                        "selector": ".video-categories"
+                    },
+                    "commentRule": {
+                        "author": {
+                            "fun": "text",
+                            "selector": "div.comment-comment > div.comment-username > a.usernameLink"
+                        },
+                        "avatar": {
+                            "fun": "attr",
+                            "param": "src",
+                            "selector": "div.comment-user-info > div.avatarImage > a > img.avatarImg"
+                        },
+                        "content": {
+                            "fun": "text",
+                            "selector": "div.comment-comment > div.comment-text.video"
+                        },
+                        "datetime": {
+                            "fun": "text",
+                            "selector": "ul.video-info > li:eq(3)"
+                        },
+                        "item": {
+                            "selector": "div.all-comments-container > div.full-thread-container > div.thread-container"
+                        }
+                    },
+                    "description": {
+                        "fun": "text",
+                        "selector": ".video-info_detail"
+                    },
+                    "tagRule": {
+                        "item": {
+                            "selector": "a.tag"
+                        },
+                        "title": {
+                            "fun": "text",
+                            "selector": "this"
+                        },
+                        "url": {
+                            "fun": "attr",
+                            "param": "href",
+                            "regex": "(.+)",
+                            "replacement": "$1",
+                            "selector": "this"
+                        }
+                    },
+                    "videoRule": {
+                        "content": {
+                            "fun": "null",
+                            "regex": "([a-zA-z]+://[^\\s]*mp4)",
+                            "selector": "this"
+                        },
+                        "item": {
+                            "selector": "body"
+                        }
+                    }
+                },
+                "galleryUrl": "{idCode:}",
+                "header": "",
+                "indexRule": {
+                    "cover": {
+                        "fun": "null",
+                        "regex": "([a-zA-z]+://[^\\s]*jpg)",
+                        "selector": "img"
+                    },
+                    "datetime": {
+                        "fun": "text",
+                        "selector": "span.bottom-item-bar"
+                    },
+                    "idCode": {
+                        "fun": "attr",
+                        "param": "href",
+                        "selector": "a"
+                    },
+                    "item": {
+                        "selector": "a.item-thumb"
+                    },
+                    "rating": {
+                        "fun": "text",
+                        "regex": "(.+)%",
+                        "replacement": "$1/20",
+                        "selector": "div.rating"
+                    },
+                    "title": {
+                        "fun": "text",
+                        "param": "title",
+                        "selector": ".left"
+                    },
+                    "uploader": {
+                        "fun": "text",
+                        "selector": ".right"
+                    }
+                },
+                "indexUrl": "https://porndope.com/",
+                "loginUrl": "https://porndope.com/",
+                "searchUrl": "https://porndope.com/s/{keyword:}",
+                "title": "porndope",
+                "disableHProxy": false,
+                "gid": 3,
+                "index": 0,
+                "isGrid": true,
+                "sid": 17,
+                "versionCode": 1
+            }

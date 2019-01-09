@@ -1,0 +1,84 @@
+{
+                "categories": [
+                    {
+                        "title": "Ê×Ò³",
+                        "url": "http://www.woyaopp.com/",
+                        "cid": 1
+                    },
+                    {
+                        "title": "¶ÌÆ¬",
+                        "url": "http://www.aaa9a.pw/movie/{pageStr:index_{page:1}.html}",
+                        "cid": 2
+                    }
+                ],
+                "cookie": "PHPSESSID=je3mrppmf9g92c1kf5r15bcrb4; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1546900963; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1546900963",
+                "flag": "preloadGallery|noRating|waterfallAsGrid|waterfallAsList|loginRequired",
+                "galleryRule": {
+                    "category": {
+                        "fun": "null",
+                        "selector": "source"
+                    },
+                    "tagRule": {
+                        "item": {
+                            "selector": "li>a:gt(1)"
+                        },
+                        "title": {
+                            "fun": "text",
+                            "selector": "this"
+                        },
+                        "url": {
+                            "fun": "attr",
+                            "param": "href",
+                            "selector": "a"
+                        }
+                    },
+                    "videoRule": {
+                        "content": {
+                            "fun": "null",
+                            "regex": "%3A%2F%2F(.*)%2F(.*)%2F(.*)%2F(.*.m3u8)",
+                            "replacement": "https://$1/$2/$3/$4",
+                            "selector": "this"
+                        },
+                        "item": {
+                            "selector": ".players script"
+                        }
+                    }
+                },
+                "galleryUrl": "http://www.woyaopp.com{idCode:}",
+                "header": "User-Agent:Mozilla/5.0 (Linux; Android 5.0.2; Redmi Note 2 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36",
+                "indexRule": {
+                    "cover": {
+                        "fun": "attr",
+                        "param": "src",
+                        "selector": "img"
+                    },
+                    "datetime": {
+                        "fun": "text",
+                        "regex": "(.*)",
+                        "selector": ".pull-left"
+                    },
+                    "idCode": {
+                        "fun": "attr",
+                        "param": "href",
+                        "selector": "a"
+                    },
+                    "item": {
+                        "selector": ".videos li"
+                    },
+                    "title": {
+                        "fun": "text",
+                        "param": "alt",
+                        "selector": ".video-title"
+                    }
+                },
+                "indexUrl": "http://www.woyaopp.com/",
+                "loginUrl": "http://www.woyaopp.com",
+                "searchUrl": "https://www.bitporno.com?q={keyword:}",
+                "title": "ÎÒÒªÅ¾°É",
+                "disableHProxy": false,
+                "gid": 1,
+                "index": 40,
+                "isGrid": false,
+                "sid": 72,
+                "versionCode": 1
+            }

@@ -1,0 +1,81 @@
+{
+                "categories": [
+                    {
+                        "title": "最新",
+                        "url": "http://www.hotcumporn.com/latest-updates/{pageStr:{page:1}/}",
+                        "cid": 1
+                    },
+                    {
+                        "title": "最热",
+                        "url": "http://www.hotcumporn.com/most-view/{pageStr:{page:1}/}",
+                        "cid": 2
+                    }
+                ],
+                "cookie": "PHPSESSID=6c0661356817de7c3a4881e5f96e661c; air=noref#!; aix=#!; aih=#!; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1546606037; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1546606037; _ga=GA1.2.1862094322.1546606037; _gid=GA1.2.897639467.1546606037; _gat=1; splash_i=false; kt_tcookie=1; kt_is_visited=1; aiu=1#!; cec03=Ym9va21hcmtzfHxkZWZhdWx0fDN8MHwwfG5vbmV8MDo=; cec03b=1546606053",
+                "flag": "preloadGallery|noRating|loginRequired",
+                "galleryRule": {
+                    "tagRule": {
+                        "item": {
+                            "selector": ".column_share_video a:gt(0)"
+                        },
+                        "title": {
+                            "fun": "text",
+                            "selector": "this"
+                        },
+                        "url": {
+                            "fun": "attr",
+                            "param": "href",
+                            "regex": "(.*)",
+                            "replacement": "$1{pageStr:{page:1}/}",
+                            "selector": "this"
+                        }
+                    },
+                    "videoRule": {
+                        "content": {
+                            "fun": "null",
+                            "regex": "url: '(.*mp4)",
+                            "selector": "this"
+                        },
+                        "item": {
+                            "selector": "#videoplayer"
+                        }
+                    }
+                },
+                "galleryUrl": "{idCode:}",
+                "header": "User-Agent:Mozilla/5.0 (Linux; Android 5.0.2; Redmi Note 2 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36",
+                "indexRule": {
+                    "cover": {
+                        "fun": "attr",
+                        "param": "data-original",
+                        "selector": "img"
+                    },
+                    "idCode": {
+                        "fun": "attr",
+                        "param": "href",
+                        "selector": "a"
+                    },
+                    "item": {
+                        "selector": ".content_preview_info"
+                    },
+                    "title": {
+                        "fun": "attr",
+                        "param": "title",
+                        "selector": "a"
+                    },
+                    "uploader": {
+                        "fun": "text",
+                        "regex": "(.*)",
+                        "selector": "a~div"
+                    }
+                },
+                "indexUrl": "http://www.hotcumporn.com/latest-updates/{pageStr:{page:1}/}",
+                "loginUrl": "http://www.hotcumporn.com/",
+                "searchUrl": "http://www.hotcumporn.com/search/{keyword:}/{pageStr:{page:1}/}",
+                "title": "热浪",
+                "disableHProxy": false,
+                "gid": 1,
+                "index": 1,
+                "isGrid": false,
+                "sid": 70,
+                "versionCode": 1
+            }

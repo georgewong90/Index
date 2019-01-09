@@ -1,0 +1,122 @@
+{
+                "categories": [
+                    {
+                        "title": "首页列表",
+                        "url": "https://www.looporn.com/{page:1}",
+                        "cid": 1
+                    },
+                    {
+                        "title": "随机",
+                        "url": "https://www.looporn.com/shemale/{page:1}",
+                        "cid": 2
+                    },
+                    {
+                        "title": "热门",
+                        "url": "https://gentai.org/rank/daily?p={page:1}",
+                        "cid": 3
+                    },
+                    {
+                        "title": "最多浏览",
+                        "url": "https://gentai.org/rank?p={page:1}",
+                        "cid": 4
+                    },
+                    {
+                        "title": "最多收藏",
+                        "url": "https://gentai.org/rank/favorites?p={page:1}",
+                        "cid": 5
+                    },
+                    {
+                        "title": "我的收藏",
+                        "url": "https://gentai.org/user/favorites?p={page:1}",
+                        "cid": 6
+                    },
+                    {
+                        "title": "浏览历史",
+                        "url": "https://gentai.org/user/history?p={page:1}",
+                        "cid": 7
+                    }
+                ],
+                "cookie": "referrer=direct; contentNiche=1; PHPSESSID=b7add6b1e001211ebb9a914e7d644c27; __cfduid=d7b631b4d1c8d69e5322465bed8de36f51528292899; _ga=GA1.2.1663536892.1528292902; _gid=GA1.2.246768224.1528292902; _gat_UA-58665642-1=1",
+                "flag": "noRating|loginRequired",
+                "galleryRule": {
+                    "pictureRule": {
+                        "item": {
+                            "selector": "body"
+                        },
+                        "thumbnail": {
+                            "fun": "html",
+                            "regex": "(//[^\\s]*jpg)",
+                            "selector": "this"
+                        },
+                        "url": {
+                            "fun": "html",
+                            "regex": "(//[^\\s]*jpg)",
+                            "selector": "this"
+                        }
+                    },
+                    "tagRule": {
+                        "item": {
+                            "selector": "li>a:gt(1)"
+                        },
+                        "title": {
+                            "fun": "text",
+                            "selector": "this"
+                        },
+                        "url": {
+                            "fun": "attr",
+                            "param": "href",
+                            "selector": "a"
+                        }
+                    },
+                    "videoRule": {
+                        "content": {
+                            "fun": "html",
+                            "regex": "(//[^\\s]*mp4)",
+                            "selector": "this"
+                        },
+                        "item": {
+                            "selector": "body"
+                        }
+                    }
+                },
+                "galleryUrl": "https://www.looporn.com{idCode:}",
+                "header": "User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:52.0) Gecko/20100101 Firefox/52.0.2",
+                "indexRule": {
+                    "category": {
+                        "fun": "text",
+                        "selector": "li.right-item"
+                    },
+                    "cover": {
+                        "fun": "attr",
+                        "param": "src",
+                        "selector": "a > img"
+                    },
+                    "datetime": {
+                        "fun": "text",
+                        "selector": "li.left-item"
+                    },
+                    "idCode": {
+                        "fun": "attr",
+                        "param": "href",
+                        "selector": "a"
+                    },
+                    "item": {
+                        "selector": "div.videobox2"
+                    },
+                    "title": {
+                        "fun": "attr",
+                        "param": "alt",
+                        "selector": "a>img"
+                    }
+                },
+                "indexUrl": "https://www.looporn.com/{page:1}",
+                "loginUrl": "https://www.looporn.com",
+                "searchUrl": "https://www.looporn.com/{page:1}?q={keyword:}",
+                "title": "looporn2",
+                "disableHProxy": false,
+                "gid": 1,
+                "index": 40,
+                "isGrid": false,
+                "sid": 9,
+                "versionCode": 0
+            }

@@ -1,0 +1,124 @@
+{
+                "categories": [
+                    {
+                        "title": "最近更新",
+                        "url": "https://www.pornhd.com/?order=newest{pageStr:&page={page:1}}",
+                        "cid": 1
+                    },
+                    {
+                        "title": "热门",
+                        "url": "https://www.thumbzilla.com/newest{pageStr:?page={page:1}}",
+                        "cid": 2
+                    }
+                ],
+                "cookie": "g36FastPopSessionRequestNumber=2; _csrf-frontend=516462c13ee4b604ff609312276e8ec06ff47d56ae66d5c00b63c4d894b02dcaa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22g0vexpECZ7RE7nDNR2SaguY7TxA9JVDf%22%3B%7D; _ga=GA1.2.610007927.1535190568; _gid=GA1.2.770021832.1535190568; webpSupported=1; trackSpeed=-1; g36FastPopSessionRequestNumber=2; g36NumFastPops=undefined__1; g36NumFastPopsExpire=undefined__Sun%20Aug%2026%202018%2017%3A51%3A49%20GMT+0800%20%28CST%29",
+                "flag": "preloadGallery|waterfallAsGrid|jsNeededGallery",
+                "galleryRule": {
+                    "commentRule": {
+                        "author": {
+                            "fun": "text",
+                            "selector": "div.comment-comment > div.comment-username > a.usernameLink"
+                        },
+                        "avatar": {
+                            "fun": "attr",
+                            "param": "src",
+                            "selector": "div.comment-user-info > div.avatarImage > a > img.avatarImg"
+                        },
+                        "content": {
+                            "fun": "text",
+                            "selector": "div.comment-comment > div.comment-text.video"
+                        },
+                        "datetime": {
+                            "fun": "text",
+                            "selector": "ul.video-info > li:eq(3)"
+                        },
+                        "item": {
+                            "selector": "div.all-comments-container > div.full-thread-container > div.thread-container"
+                        }
+                    },
+                    "description": {
+                        "fun": "null",
+                        "regex": "Up\">(\\d+)</span> \n <i class=\"downVoteIcon\"></i> \n <span class=\"votesDown\">(\\d+)</span>(.+)",
+                        "replacement": "$1赞$2踩",
+                        "selector": ".voteCount"
+                    },
+                    "tagRule": {
+                        "item": {
+                            "selector": ".tags a"
+                        },
+                        "title": {
+                            "fun": "text",
+                            "selector": "this"
+                        },
+                        "url": {
+                            "fun": "attr",
+                            "param": "href",
+                            "regex": "(.+)",
+                            "replacement": "$1{pageStr:?page={page:1}}",
+                            "selector": "this"
+                        }
+                    },
+                    "videoRule": {
+                        "content": {
+                            "fun": "attr",
+                            "param": "src",
+                            "selector": "this"
+                        },
+                        "item": {
+                            "selector": "video"
+                        }
+                    }
+                },
+                "galleryUrl": "https://www.pornhd.com{idCode:}",
+                "header": "",
+                "indexRule": {
+                    "category": {
+                        "fun": "text",
+                        "selector": ".hd"
+                    },
+                    "cover": {
+                        "fun": "attr",
+                        "param": "src",
+                        "regex": "(.+)webp",
+                        "replacement": "$1jpg",
+                        "selector": "img"
+                    },
+                    "datetime": {
+                        "fun": "text",
+                        "selector": ".hoverInfo"
+                    },
+                    "idCode": {
+                        "fun": "attr",
+                        "param": "href",
+                        "selector": "a"
+                    },
+                    "item": {
+                        "selector": "ul.thumbs li:gt(0)"
+                    },
+                    "rating": {
+                        "fun": "text",
+                        "regex": "(\\d+)%",
+                        "replacement": "$1/20",
+                        "selector": ".hoverInfo"
+                    },
+                    "title": {
+                        "fun": "text",
+                        "param": "title",
+                        "selector": ".title"
+                    },
+                    "uploader": {
+                        "fun": "text",
+                        "selector": "time"
+                    }
+                },
+                "indexUrl": "https://www.pornhd.com/?order=newest{pageStr:&page={page:1}}",
+                "loginUrl": "https://www.pornhd.com/",
+                "searchUrl": "https://www.thumbzilla.com/video/search?q=airi{keyword:}{pageStr:?page={page:1}}",
+                "title": "pornhd",
+                "disableHProxy": false,
+                "gid": 1,
+                "index": 48,
+                "isGrid": true,
+                "sid": 12,
+                "versionCode": 1
+            }

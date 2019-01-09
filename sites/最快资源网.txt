@@ -1,0 +1,114 @@
+{
+                "categories": [
+                    {
+                        "title": "剧场",
+                        "url": "http://zuikzy.com/?m=vod-type-id-2{pageStr:-pg-{page:1}}.html",
+                        "cid": 1
+                    },
+                    {
+                        "title": "电影",
+                        "url": "http://zuikzy.com/?m=vod-type-id-1{pageStr:-pg-{page:1}}.html",
+                        "cid": 2
+                    },
+                    {
+                        "title": "动漫",
+                        "url": "http://zuikzy.com/?m=vod-type-id-4{pageStr:-pg-{page:1}}.html",
+                        "cid": 3
+                    },
+                    {
+                        "title": "伦理",
+                        "url": "http://zuikzy.com/?m=vod-type-id-16{pageStr:-pg-{page:1}}.html",
+                        "cid": 4
+                    },
+                    {
+                        "title": "美女",
+                        "url": "http://zuikzy.com/?m=vod-type-id-19{pageStr:-pg-{page:1}}.html",
+                        "cid": 5
+                    },
+                    {
+                        "title": "vip",
+                        "url": "http://zuikzy.com/?m=vod-type-id-21{pageStr:-pg-{page:1}}.html",
+                        "cid": 6
+                    },
+                    {
+                        "title": "街拍",
+                        "url": "http://zuikzy.com/?m=vod-type-id-22{pageStr:-pg-{page:1}}.html",
+                        "cid": 7
+                    }
+                ],
+                "cookie": "PHPSESSID=1fefacqqvgdo9f7js6ums1f557; Hm_lvt_bfc6c23974fbad0bbfed25f88a973fb0=1546517914; Hm_lpvt_bfc6c23974fbad0bbfed25f88a973fb0=1546517979; yunsuo_session_verify=0e724055552f633fe10b4b67d913dc78",
+                "flag": "preloadGallery|noRating",
+                "galleryRule": {
+                    "cover": {
+                        "fun": "attr",
+                        "param": "src",
+                        "selector": ".videoPic img"
+                    },
+                    "videoRule": {
+                        "content": {
+                            "fun": "null",
+                            "regex": "(https.*)\"",
+                            "selector": "this"
+                        },
+                        "item": {
+                            "regex": "m3u8",
+                            "selector": "li input"
+                        }
+                    }
+                },
+                "galleryUrl": "http://zuikzy.com{idCode:}",
+                "header": "User-Agent:Mozilla/5.0 (Linux; Android 5.0.2; Redmi Note 2 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36",
+                "indexRule": {
+                    "category": {
+                        "fun": "text",
+                        "selector": "td:eq(2)"
+                    },
+                    "datetime": {
+                        "fun": "text",
+                        "selector": "td:eq(4)"
+                    },
+                    "idCode": {
+                        "fun": "attr",
+                        "param": "href",
+                        "selector": ".l a"
+                    },
+                    "item": {
+                        "selector": ".DianDian"
+                    },
+                    "tagRule": {
+                        "item": {
+                            "selector": "td:eq(1) a"
+                        },
+                        "title": {
+                            "fun": "text",
+                            "selector": "this"
+                        },
+                        "url": {
+                            "fun": "attr",
+                            "param": "href",
+                            "regex": "(.*).html",
+                            "replacement": "$1{pageStr:-pg-{page:1}.html",
+                            "selector": "this"
+                        }
+                    },
+                    "title": {
+                        "fun": "text",
+                        "param": "title",
+                        "selector": ".l a"
+                    },
+                    "uploader": {
+                        "fun": "text",
+                        "selector": "td:eq(3)"
+                    }
+                },
+                "indexUrl": "http://zuikzy.com/?m=vod-type-id-2{pageStr:-pg-{page:1}}.html",
+                "loginUrl": "http://zuikzy.com",
+                "searchUrl": "https://www.xvideos.com/?k={keyword:}&p={page:0}",
+                "title": "最快资源网",
+                "disableHProxy": false,
+                "gid": 1,
+                "index": 0,
+                "isGrid": false,
+                "sid": 68,
+                "versionCode": 2
+            }

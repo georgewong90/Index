@@ -1,0 +1,108 @@
+{
+                "categories": [
+                    {
+                        "title": "首页列表",
+                        "url": "https://www.bitporno.com/?q=&or=&cat=&sort=recent&time=someday&length=all&view=0&page={page:0}&user=",
+                        "cid": 1
+                    },
+                    {
+                        "title": "随机",
+                        "url": "https://www.looporn.com/shemale/{page:1}",
+                        "cid": 2
+                    },
+                    {
+                        "title": "热门",
+                        "url": "https://gentai.org/rank/daily?p={page:1}",
+                        "cid": 3
+                    },
+                    {
+                        "title": "最多浏览",
+                        "url": "https://gentai.org/rank?p={page:1}",
+                        "cid": 4
+                    },
+                    {
+                        "title": "最多收藏",
+                        "url": "https://gentai.org/rank/favorites?p={page:1}",
+                        "cid": 5
+                    },
+                    {
+                        "title": "我的收藏",
+                        "url": "https://gentai.org/user/favorites?p={page:1}",
+                        "cid": 6
+                    },
+                    {
+                        "title": "浏览历史",
+                        "url": "https://gentai.org/user/history?p={page:1}",
+                        "cid": 7
+                    }
+                ],
+                "cookie": "PHPSESSID=a5th3s8l675vorkvedpfjdqh62; ageverf=1; __test; __PPU_BACKCLCK_1539448=true; _ym_uid=154632768061569732; _ym_d=1546327680; _ym_isad=2; BJPPopAdsCount=1; _popfiredfallback=1; __PPU_SESSION_1_1539448_false=1546327682488|3|1546327775727|3|1; BJPPopAdsLastPopAt=1546327793424; q=720",
+                "flag": "preloadGallery|noRating|noTitle",
+                "galleryRule": {
+                    "category": {
+                        "fun": "null",
+                        "selector": "source"
+                    },
+                    "tagRule": {
+                        "item": {
+                            "selector": "li>a:gt(1)"
+                        },
+                        "title": {
+                            "fun": "text",
+                            "selector": "this"
+                        },
+                        "url": {
+                            "fun": "attr",
+                            "param": "href",
+                            "selector": "a"
+                        }
+                    },
+                    "videoRule": {
+                        "content": {
+                            "fun": "null",
+                            "regex": "(http.*\\.mp4)",
+                            "selector": "this"
+                        },
+                        "item": {
+                            "selector": "source"
+                        }
+                    }
+                },
+                "galleryUrl": "https://www.bitporno.com{idCode:}",
+                "header": "User-Agent:Mozilla/5.0 (Linux; Android 5.0.2; Redmi Note 2 Build/LRX22G; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Mobile Safari/537.36",
+                "indexRule": {
+                    "cover": {
+                        "fun": "attr",
+                        "param": "src",
+                        "selector": "img"
+                    },
+                    "idCode": {
+                        "fun": "attr",
+                        "param": "href",
+                        "selector": "a"
+                    },
+                    "item": {
+                        "selector": ".entry.square_entry.trans-25"
+                    },
+                    "rating": {
+                        "fun": "html",
+                        "regex": "(.*)",
+                        "selector": ".cla-pf"
+                    },
+                    "title": {
+                        "fun": "text",
+                        "param": "alt",
+                        "selector": "div:eq(1)"
+                    }
+                },
+                "indexUrl": "https://www.bitporno.com/?q=&or=&cat=&sort=recent&time=someday&length=all&view=0&page={page:0}&user=",
+                "loginUrl": "https://www.bitporno.com",
+                "searchUrl": "https://www.bitporno.com/?q={keyword:}&or=&cat=&sort=recent&time=someday&length=all&view=0&page={page:0}&user=",
+                "title": "bitporno",
+                "disableHProxy": false,
+                "gid": 1,
+                "index": 40,
+                "isGrid": true,
+                "sid": 61,
+                "versionCode": 1
+            }

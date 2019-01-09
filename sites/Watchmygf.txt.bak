@@ -1,0 +1,101 @@
+{
+    "categories": [
+        {
+            "title": "最新",
+            "url": "https://www.watchmygf.me/new/{pageStr:{page:1}/}",
+            "cid": 1
+        },
+        {
+            "title": "受欢迎",
+            "url": "https://www.watchmygf.me/popular/{pageStr:{page:1}/}",
+            "cid": 2
+        },
+        {
+            "title": "评价",
+            "url": "https://www.watchmygf.me/rated/{pageStr:{page:1}/}",
+            "cid": 3
+        },
+        {
+            "title": "长度",
+            "url": "https://www.watchmygf.me/longest/{pageStr:{page:1}/}",
+            "cid": 4
+        }
+    ],
+    "cookie": "PHPSESSID=8e0ec6ba84bfbc54e47384530aa694d0; _gat=1; kt_tcookie=1; _ga=GA1.2.1196733302.1506924941; _gid=GA1.2.1567708004.1506924941; kt_tcookie=1; kt_is_visited=1; p3006=1",
+    "extraRule": {
+        "pictureRule": {}
+    },
+    "flag": "waterfallAsList|waterfallAsGrid",
+    "galleryRule": {
+        "pictureRule": {},
+        "description": {
+            "fun": "null",
+            "selector": ".player"
+        },
+        "tagRule": {
+            "item": {
+                "selector": ".item.item-cat a"
+            },
+            "title": {
+                "fun": "html",
+                "selector": "this"
+            },
+            "url": {
+                "fun": "attr",
+                "param": "href",
+                "regex": "(.*).porn",
+                "replacement": "$1{pageStr:-{page:1}}.porn",
+                "selector": "this"
+            }
+        },
+        "videoRule": {
+            "content": {
+                "fun": "null",
+                "regex": "rnd(: ')(.+)(\\d+)(',.*)(http.*mp4/)",
+                "replacement": "$5?rnd=$2",
+                "selector": "this"
+            },
+            "item": {
+                "0regex": "video_url(.*)",
+                "selector": ".player"
+            }
+        }
+    },
+    "galleryUrl": "{idCode:}",
+    "header": "",
+    "indexRule": {
+        "category": {
+            "fun": "text",
+            "selector": ".item-stats"
+        },
+        "cover": {
+            "fun": "attr",
+            "param": "src",
+            "regex": "(.*)",
+            "selector": ".thumb-container img"
+        },
+        "idCode": {
+            "fun": "attr",
+            "param": "href",
+            "regex": "(.*)",
+            "selector": ".item-link"
+        },
+        "item": {
+            "selector": ".item.video"
+        },
+        "title": {
+            "fun": "html",
+            "selector": ".name"
+        }
+    },
+    "indexUrl": "https://www.watchmygf.me/new/{pageStr:{page:1}/}",
+    "loginUrl": "https://www.watchmygf.me/",
+    "searchUrl": "https://www.watchmygf.me/search/{keyword:}/",
+    "title": "watchmygf",
+    "disableHProxy": false,
+    "gid": 3,
+    "index": 0,
+    "isGrid": false,
+    "sid": 16,
+    "versionCode": 1
+}

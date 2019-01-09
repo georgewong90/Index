@@ -1,0 +1,123 @@
+{
+                "categories": [
+                    {
+                        "title": "最近更新",
+                        "url": "https://www.lsmpx.com/plugin.php?id=group&page={page:1}",
+                        "cid": 1
+                    },
+                    {
+                        "title": "热门",
+                        "url": "http://www.cao0003.com/most-popular/{pageStr:{page:1}/}",
+                        "cid": 2
+                    },
+                    {
+                        "title": "最多点击",
+                        "url": "https://www.tube8.com/most-viewed/page/{page:1}/?timeby=all",
+                        "cid": 3
+                    },
+                    {
+                        "title": "最多收藏",
+                        "url": "https://www.tube8.com/most-favorited/page/{page:1}/?timeby=all",
+                        "cid": 4
+                    },
+                    {
+                        "title": "最受好评",
+                        "url": "https://www.tube8.com/top/page/{page:1}/?timeby=all",
+                        "cid": 5
+                    }
+                ],
+                "cookie": "",
+                "flag": "preloadGallery|waterfallAsGrid|noRating",
+                "galleryRule": {
+                    "commentRule": {
+                        "author": {
+                            "fun": "text",
+                            "selector": ".thread-author a"
+                        },
+                        "avatar": {
+                            "fun": "attr",
+                            "param": "src",
+                            "selector": "a.pic img"
+                        },
+                        "content": {
+                            "fun": "text",
+                            "selector": "p"
+                        },
+                        "datetime": {
+                            "fun": "text",
+                            "selector": "span"
+                        },
+                        "item": {
+                            "selector": ".thread-meta"
+                        }
+                    },
+                    "pictureRule": {
+                        "item": {
+                            "selector": ".adw > li > img"
+                        },
+                        "thumbnail": {
+                            "fun": "attr",
+                            "param": "src",
+                            "selector": "this"
+                        },
+                        "url": {
+                            "fun": "attr",
+                            "param": "src",
+                            "selector": "this"
+                        }
+                    },
+                    "tagRule": {
+                        "item": {
+                            "selector": "#thread-title"
+                        },
+                        "title": {
+                            "fun": "text",
+                            "selector": "a"
+                        },
+                        "url": {
+                            "fun": "attr",
+                            "param": "href",
+                            "regex": "(.+)-1",
+                            "replacement": "$1-{page:1}.html",
+                            "selector": "a"
+                        }
+                    }
+                },
+                "galleryUrl": "https://www.lsmpx.com/{idCode:}-{page:1}-1.html",
+                "header": "",
+                "indexRule": {
+                    "cover": {
+                        "fun": "attr",
+                        "param": "src",
+                        "selector": ".photo>a>img"
+                    },
+                    "idCode": {
+                        "fun": "attr",
+                        "param": "href",
+                        "regex": "(.*)-1-1.html",
+                        "selector": "h2>a"
+                    },
+                    "item": {
+                        "selector": "div.group"
+                    },
+                    "title": {
+                        "fun": "text",
+                        "param": "title",
+                        "selector": "h2>a"
+                    },
+                    "uploader": {
+                        "fun": "text",
+                        "selector": "div.data"
+                    }
+                },
+                "indexUrl": "https://www.lsmpx.com/plugin.php?id=group&page={page:1}",
+                "loginUrl": "https://www.lsmpx.com/",
+                "searchUrl": "https://www.tube8.com/searches.html?q={keyword:}&page={page:1}",
+                "title": "蕾丝猫",
+                "disableHProxy": false,
+                "gid": 5,
+                "index": 42,
+                "isGrid": true,
+                "sid": 42,
+                "versionCode": 1
+            }
